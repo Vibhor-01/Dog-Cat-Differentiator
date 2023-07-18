@@ -1,6 +1,8 @@
 # Dog-Cat-Differentiator
 This is a Dog/Cat Differentiator Project using Tensorflow in Deep learning.
 
+Link for DataSet: https://drive.google.com/drive/folders/1mWrX9nMewW0CJvMMli4OKAithfbzHPYl?usp=drive_link
+
 The project is based on Convolutional neural networks, and uses Tensorflow for creating and training the Deep Learning Model. The Tensorflow used here is 2.12.0. The Project uses 2 dataset folder which has one folder containing the photos of a DOG and the second folder containing the Photos of a CAT.
 
 The data is split into two folders containing Training and Test set, both of the folders contain the images of DOGs and CATs. The dataset are imported into the jupyter notebook using ImageDataGenerator and rescaled to 1./255, shear_range of 0.2 and zoom_range of 0.2, along with a horizontal flip. The training dataset on the other hand does not require any sort of Horizontal flip, or shear_range change, as our model should be able to tell whether it is a photo of a DOG or a CAT. It is however, recaled to 1./255.
